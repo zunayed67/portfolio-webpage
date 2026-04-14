@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zunayed Hossain · Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/styel.css">
+</head>
+<body>
+  <div class="portfolio-card">
+    <!-- profile header -->
+    <div class="profile-header">
+      <div class="avatar-wrapper">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+      <div class="name-title">
+        <h1>Zunayed Hossain</h1>
+        <div class="badge-age">
+          <i class="fas fa-cake-candles" style="margin-right: 8px;"></i> 
+          <span id="ageDisplay">24</span> years old
+        </div>
+        <div class="sub-line">
+          <i class="fas fa-map-pin" style="margin-right: 6px; opacity: 0.8;"></i> full‑stack developer · problem solver
+        </div>
+      </div>
+    </div>
+
+    <!-- skills section -->
+    <div class="section-title">
+      <i class="fas fa-code"></i> 
+      <span>tech stack & specialties</span>
+    </div>
+    <div class="skill-cloud" id="skillContainer">
+      <!-- skills will be rendered with js -->
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section-title">
+      <i class="fas fa-folder-open"></i>
+      <span>featured projects</span>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-project="ecommerce">
+        <div class="project-icon"><i class="fas fa-store"></i></div>
+        <h3>MERN E‑Commerce</h3>
+        <p>Full-stack shopping platform with payment integration, admin dashboard, and real-time inventory.</p>
+        <div class="project-tags">
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">Express</span>
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+        </div>
+        <a href="#" class="project-link" data-github="https://github.com/zunayed67" data-linkedin="https://www.linkedin.com/in/zunayed-hossen-b28b98337/">
+          <i class="fab fa-github"></i> view code <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card" data-project="taskflow">
+        <div class="project-icon"><i class="fas fa-tasks"></i></div>
+        <h3>TaskFlow</h3>
+        <p>Collaborative task manager with real-time updates, drag‑drop boards, and team analytics.</p>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Socket.io</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+        <a href="#" class="project-link" data-github="https://github.com/zunayed67" data-linkedin="https://www.linkedin.com/in/zunayed-hossen-b28b98337/">
+          <i class="fab fa-github"></i> view code <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="project-card" data-project="sql-analyzer">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>SQLytics</h3>
+        <p>Advanced SQL query optimizer and visualization tool for large datasets, built with C++ backend.</p>
+        <div class="project-tags">
+          <span class="project-tag">C++</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Chart.js</span>
+          <span class="project-tag">Express</span>
+        </div>
+        <a href="#" class="project-link" data-github="https://github.com/zunayed67" data-linkedin="https://www.linkedin.com/in/zunayed-hossen-b28b98337/">
+          <i class="fab fa-github"></i> view code <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- GitHub & LinkedIn Profiles -->
+    <div class="section-title">
+      <i class="fas fa-share-alt"></i>
+      <span>connect on dev platforms</span>
+    </div>
+    <div class="social-profiles">
+      <a href="https://github.com/zunayed67" target="_blank" class="social-card" id="githubCard">
+        <i class="fab fa-github"></i>
+        <div class="social-info">
+          <h4>GitHub</h4>
+          <p>github.com/zunayed67</p>
+        </div>
+        <i class="fas fa-external-link-alt" style="margin-left: auto; opacity: 0.7; font-size: 1rem;"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/zunayed-hossen-b28b98337/" target="_blank" class="social-card" id="linkedinCard">
+        <i class="fab fa-linkedin"></i>
+        <div class="social-info">
+          <h4>LinkedIn</h4>
+          <p>zunayed-hossen</p>
+        </div>
+        <i class="fas fa-external-link-alt" style="margin-left: auto; opacity: 0.7; font-size: 1rem;"></i>
+      </a>
+    </div>
+
+    <!-- contact section -->
+    <div class="section-title">
+      <i class="fas fa-address-card"></i>
+      <span>direct contact</span>
+    </div>
+    <div class="contact-grid">
+      <!-- email -->
+      <div class="contact-item" id="emailContact">
+        <i class="fas fa-envelope contact-icon"></i>
+        <div class="contact-detail">
+          zunayedhossen719@gmail.com
+          <small>email</small>
+        </div>
+        <span class="copy-badge" data-copy="zunayedhossen719@gmail.com" data-type="email">
+          <i class="far fa-copy"></i> copy
+        </span>
+      </div>
+      <!-- whatsapp -->
+      <div class="contact-item" id="whatsappContact">
+        <i class="fab fa-whatsapp contact-icon"></i>
+        <div class="contact-detail">
+          +880 1819-776678
+          <small>whatsapp</small>
+        </div>
+        <span class="copy-badge" data-copy="+8801819776678" data-type="whatsapp">
+          <i class="far fa-copy"></i> copy
+        </span>
+      </div>
+    </div>
+
+    <!-- subtle extra -->
+    <hr>
+    <div class="action-row">
+      <button class="btn-icon" id="greetBtn">
+        <i class="fas fa-hand-peace"></i> say hi
+      </button>
+      <button class="btn-icon" id="portfolioHintBtn">
+        <i class="fas fa-terminal"></i> about age
+      </button>
+    </div>
+  </div>
+
+  <!-- floating toast -->
+  <div id="liveToast" class="toast-msg">📋 copied!</div>
+
+  <script src="/script.js">
+    
+  </script>
+
+  <noscript>
+    <div style="color:white; background:#0f1a24; padding:2rem;">JavaScript disabled — Zunayed Hossain, 25, skills: HTML, CSS, JS, MERN, SQL, C++. GitHub: github.com/zunayed67 · LinkedIn: linkedin.com/in/zunayed-hossen-b28b98337</div>
+  </noscript>
+</body>
+</html>
